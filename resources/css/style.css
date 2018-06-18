@@ -1,0 +1,136 @@
+/* Universal */
+
+html {
+  font-size: 16px;
+  color: darkgrey;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+
+  color: black;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #4a4a4a
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  border: 1px solid black;
+  position: fixed;
+}
+
+.logo {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 15rem;
+}
+
+nav {
+  min-width: 30rem;
+}
+
+nav span {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Content */
+
+.content {
+  position: relative;
+  top: 64px;
+}
+
+/* Banner */
+
+.banner {
+  background-color: #d8d8d8;
+  display: flex;
+  align-items: center;
+}
+
+.banner_image {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.banner_text {
+  display: inline-block;
+  margin-right: 120px;
+  /* margin-left: 24px; */
+}
+
+.banner h1 {
+  line-height: 1.2;
+}
+
+.banner h3 {
+  line-height: 1.2;
+}
+
+.button {
+  font-size: 1rem;
+  color: white;
+  background-color: #4a4a4a;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* Information */
+
+.information {
+  display: flex;
+  max-width: 1000px;
+}
+
+.supporting_stories {
+  margin-top: 32px;
+}
+
+.story img {
+  margin-left: 16px;
+  width: 35%
+}

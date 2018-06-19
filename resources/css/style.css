@@ -6,9 +6,8 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: sans-serif;
-
   color: black;
   width: 100%;
 }
@@ -37,6 +36,13 @@ h3 {
 
 p {
   font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.3rem;
+}
+
+.sixty {
+  border: 1px solid black;
+  width: 60%;
 }
 
 /* Header */
@@ -88,17 +94,25 @@ nav span {
   background-color: #d8d8d8;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
-.banner_image {
-  width: 60%;
+.banner_container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
   margin: 32px 24px;
+  /* border: solid 1px black; */
+}
+
+.banner_container img {
+  width: 100%;
+  height: auto;
 }
 
 .banner_text {
   display: inline-block;
-  margin-right: 120px;
-  /* margin-left: 24px; */
+  width: 30%;
 }
 
 .banner h1 {
@@ -123,14 +137,68 @@ nav span {
 
 .information {
   display: flex;
-  max-width: 1000px;
+  width: 100%;
+  /* border: solid 1px black; */
+}
+
+.img_container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 32px 24px;
+  border: solid 1px black;
+}
+
+.img_container img {
+  width: 100%;
+  height: auto;
+}
+
+.story, .main_text .author {
+  padding-top: 32px;
+}
+
+.main_text {
+  padding-left: 24px;
+  padding-right: 5rem;
+}
+
+.main_text h2, .author {
+  margin-bottom: 32px;
+}
+
+.main_text .author {
+  font-size: 0.8rem;
 }
 
 .supporting_stories {
-  margin-top: 32px;
+  border-left: 1px solid #d8d8d8;
+  width: 40%;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 .story img {
-  margin-left: 16px;
-  width: 35%
+  padding-left: 16px;
+  width: 35%;
+  height: auto;
+}
+
+.supporting_text {
+  padding-left: 24px;
+  padding-right: 24px;
+  line-height: 1.3rem;
+}
+
+.supporting_text h3, .supporting_text p {
+  padding-top: 0.8rem;
+}
+
+.read_more {
+  color: #5c9ae4;
 }
